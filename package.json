@@ -1,0 +1,17 @@
+{
+  "name": "tracelink",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "交易关系图谱调查台：可追溯、增量重算、权限受控",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed-cli.js",
+    "reset": "node server/seed-cli.js --reset",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
